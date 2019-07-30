@@ -9,7 +9,8 @@ import { Output,EventEmitter } from '@angular/core'; //will be producing an outp
 })
 export class ProductAlertsComponent implements OnInit {
    @Input() product;  // recieved input prepared for above in imports
-  @Output() notify = new EventEmitter;  // for producing output.
+  @Output() notify = new EventEmitter;  // for producing output/emitting an EventEmitter
+  
   constructor() { }
 
   ngOnInit() {
